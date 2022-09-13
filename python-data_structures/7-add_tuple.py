@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 def tuple_formater(a=()):
     if len(a) < 2:
+        if len(a) == 1:
+            new = (a[0], 0)
         new = a + (0, 0)
         return new
     elif len(a) > 2:
-        new = a[0:2]
+        new = q[0:2]
         return new
     else:
         return a
