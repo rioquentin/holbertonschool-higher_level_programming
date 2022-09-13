@@ -6,7 +6,7 @@ def tuple_formater(a=()):
         new = a + (0, 0)
         return new
     elif len(a) > 2:
-        new = q[0:2]
+        new = a[0:2]
         return new
     else:
         return a
