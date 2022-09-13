@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def tuple_formater(a=()):
-    print(len(a))
     if len(a) < 2:
         new = a + (0, 0)
         return new
