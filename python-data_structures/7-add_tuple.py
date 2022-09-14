@@ -12,6 +12,8 @@ def tuple_formater(a=()):
         return new
     else:
         return a
+
+
 def add_tuple(tuple_a=(), tuple_b=()):
     a = tuple_formater(tuple_a)
     b = tuple_formater(tuple_b)
