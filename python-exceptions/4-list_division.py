@@ -3,7 +3,7 @@ def list_division(my_list_1, my_list_2, list_length):
     try:
         nl = []
         for i in range(0, list_length):
-            try :
+            try:
                 result = format(my_list_1[i] // my_list_2[i], ".1f")
                 nl.append(float(result))
             except ZeroDivisionError:
