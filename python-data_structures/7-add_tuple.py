@@ -14,7 +14,6 @@ def tuple_formater(a=()):
         return a
 
 def add_tuple(tuple_a=(), tuple_b=()):
-
     a = tuple_formater(tuple_a)
     b = tuple_formater(tuple_b)
     return(tuple(p+q for p, q in zip(a, b)))
