@@ -5,4 +5,3 @@ def multiple_returns(sentence):
         first = sentence[0]
         return _len, first
     return 0, None
-
