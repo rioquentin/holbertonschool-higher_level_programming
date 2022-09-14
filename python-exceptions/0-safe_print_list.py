@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-def str_len(a):
-    for i in a:
-        j+=1
-    return j
-
 def safe_print_list(my_list=[], x=0):
     z = 0
     try:
