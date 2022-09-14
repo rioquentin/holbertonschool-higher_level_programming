@@ -8,5 +8,5 @@ def safe_print_list_integers(my_list=[], x=0):
                 z += 1
         print("")
     except (ValueError, TypeError):
-        None       
+        None
     return z
