@@ -4,6 +4,8 @@ def tuple_formater(a=()):
     if len(a) < 2:
         if len(a) == 1:
             new = (a[0], 0)
+        elif len(a) == 0:
+            new = (0, 0)
         return new
     elif len(a) > 2:
         new = a[0:2]
