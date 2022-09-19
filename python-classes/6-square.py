@@ -50,7 +50,7 @@ class Square(object):
             for b in range(0, self.__position[1]):
                     print("")
             for i in range(0, self.__size):
-                for z in range(0, self.__position[0]):
+                for z in range(0, self.__position[1]):
                     print("", end="")
                 for x in range(0, self.__size):
                     print("{}".format("#"), end="")
