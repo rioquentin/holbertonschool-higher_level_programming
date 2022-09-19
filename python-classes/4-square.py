@@ -2,7 +2,7 @@
 ''' Empty Class'''
 
 
-class Square(object):
+class Square:
     '''Empty'''
  
     def __init(self, size=0):
