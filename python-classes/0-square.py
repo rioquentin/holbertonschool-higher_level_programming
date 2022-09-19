@@ -2,5 +2,7 @@
 ''' Empty Class'''
 
 class Square:
+    '''Empty'''
+
     pass
 
