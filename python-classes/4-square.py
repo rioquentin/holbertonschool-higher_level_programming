@@ -4,11 +4,11 @@
 
 class Square(object):
     '''Empty'''
- 
+
     def __init__(self, size=0):
         '''defining size'''
         self.__size = size
-    
+
     @property
     def size(self):
         '''setter'''
@@ -24,8 +24,6 @@ class Square(object):
             raise ValueError("size must be >= 0")
 
         self.__size = value
-
-
     def area(self):
         '''Define size*size'''
 
