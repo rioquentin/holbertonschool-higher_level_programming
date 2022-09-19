@@ -37,5 +37,6 @@ class Square(object):
             for i in range(0, self.__size):
                 for x in range(0, self.__size):
                     print("{}".format("#"))
+                print("")
         else:
             print("")
