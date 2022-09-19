@@ -47,9 +47,11 @@ class Square(object):
     def my_print(self):
         ''' func to print the square'''
         if self.__size != 0:
-            for i in range(0, self.__size):
-                for z in range(0, self.__position[0]):
+            for b in range(0, self.__position[0]:
                     print("")
+            for i in range(0, self.__size):
+                for z in range(0, self.__position[1]):
+                    print("", end="")
                 for x in range(0, self.__size):
                     print("{}".format("#"), end="")
                 print("")
