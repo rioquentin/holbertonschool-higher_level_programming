@@ -9,8 +9,9 @@ class Square(object):
         '''defining size'''
         self.__size = size
 
-    def size(self)
-    return self.__size
+    def size(self):
+        '''setter'''
+        return self.__size
 
     def size(self, value):
         '''seting size'''
