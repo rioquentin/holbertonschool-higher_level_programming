@@ -6,7 +6,7 @@ class Square:
     '''Empty'''
  
     def __init(self, size=0):
-        '''defining size''
+        '''defining size'''
         self.__size = size
 
     def size(self, value):
