@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
         for column in row:
             if type(column) is not int:
                 raise TypeError("matrix must be a matrix\
-                        (list of lists) of integers/floats")
+                                (list of lists) of integers/floats")
     
     ###
     size_0 = len(matrix[0])
