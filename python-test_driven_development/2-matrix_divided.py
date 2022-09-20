@@ -9,8 +9,7 @@ def matrix_divided(matrix, div):
     for row in matrix:
         for column in row:
             if type(column) is not int:
-                raise TypeError("matrix must be a matrix \
-                        (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     ###
     size_0 = len(matrix[0])
@@ -24,7 +23,7 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix must have the same size")
 
     ###
-    if type(div) not in [int, float]:
+    if type(div) not in [int, float] or div != div:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
