@@ -3,6 +3,8 @@
 
 
 def text_indentation(text):
+    ''' func to print'''
+
     if type(text) is not str:
         raise TypeError("text must be a string")
     l = text.split()
