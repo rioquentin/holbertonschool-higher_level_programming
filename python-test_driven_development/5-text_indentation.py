@@ -3,21 +3,17 @@
 
 
 def text_indentation(text):
-    if type(text) is not str:
-        raise TypeError("text must be a string")
-
-    for i in range(0, len(text)):
-        if text[i] == "?":
-            print(text[i])
-            print("")
-            i += 1
-        elif text[i] == ":":
-            print(text[i])
-            print("")
-            i += 1
-        elif text[i] == ".":
-            print(text[i])
-            print("")
-            i += 1
+    l = text.split()
+    h = ""
+    for i in l:
+        if h == "":
+            h += i
         else:
-            print(text[i], end="")
+            h += " " + i
+    for x in range(0, len(h)):
+        if h[x] in ["?", ".", ":"]:
+            print(h[x] + "\n")
+        elif h[x - 1] in ["?", ":", "."]:
+            pass
+        else:
+            print(h[x], end="")
