@@ -8,10 +8,7 @@ Traceback (most recent call last):
 ...
 TypeError: text must be a string
 
->>> text_indentation(" ")
-<BLANKLINE>
-
 >>> text_indentation()
 Traceback (most recent call last):
 ...
-TypeError: missing argument
+TypeError: text_indentation() missing 1 required positional argument: 'text'
