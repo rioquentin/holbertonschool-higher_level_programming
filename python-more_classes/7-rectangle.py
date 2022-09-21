@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 ''' Empty Class'''
 
@@ -59,7 +58,7 @@ class Rectangle:
             return l
         for i in range(0, self.height):
             for x in range(0, self.width):
-                l += str(Rectangle.print_symbol)
+                l += str(self.print_symbol)
             if i + 1 != self.height:
                 l += "\n"
         return l
