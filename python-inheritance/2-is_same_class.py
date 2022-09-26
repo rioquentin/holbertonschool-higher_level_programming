@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' all func'''
 
+
 def is_same_class(obj, a_class):
     ''' check if obj is instance of a-class'''
 
