@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' all func'''
+''' Test'''
 
 
 def is_same_class(obj, a_class):
