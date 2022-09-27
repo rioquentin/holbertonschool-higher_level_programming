@@ -6,4 +6,4 @@ import json
 def from_json_string(my_str):
     '''return object from json'''
 
-    return json.dumps(my_str)
+    return json.dumps(list(my_str))
