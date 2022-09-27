@@ -5,4 +5,3 @@
 def copy_list(l):
     '''func to copy'''
     a = l
-    return a
