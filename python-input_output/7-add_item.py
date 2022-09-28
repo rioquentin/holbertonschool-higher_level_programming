@@ -11,6 +11,7 @@ def main(args):
 
     f = load_from_json_file("add_item.json")
     for i in args:
-        save_to_json_file(i, f)
+        f.append(i)
+    save_to_json_file(f, "add_item.json")
 
 main(sys.argv[1:])
