@@ -6,4 +6,4 @@ import json
 def class_to_json(obj):
     '''fun'''
 
-    return json.dumps(obj)
+    return obj.__dict__
