@@ -20,4 +20,4 @@ class Student:
             l = []
             for i in attrs:
                 l.append(i)
-            return self.__dict__[l]
+            return self.__dict__(l)
