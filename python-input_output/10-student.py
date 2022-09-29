@@ -14,7 +14,7 @@ class Student:
 
     def to_json(self, attrs=None):
         '''to json'''
-        if attrs is not None:
-            return  for i in
+        if attrs == None:
+            return self.__dict__
         else:
             return self.__dict__[i] for i in attrs
