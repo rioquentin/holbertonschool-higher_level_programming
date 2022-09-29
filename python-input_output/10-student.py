@@ -17,7 +17,4 @@ class Student:
         if attrs == None:
             return self.__dict__
         else:
-            l = []
-            for i in attrs:
-                l.append(i)
-            return self.__dict__(l)
+            return self.__dict__[attrs]
