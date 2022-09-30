@@ -19,6 +19,7 @@ class Student:
         else:
             a = {}
             for i in attrs:
-                a.update({i:dict(self.__dict__).get(i)})
+                if hasattr(self, i):
+                    a.update({i:dict(self.__dict__).get(i)})
             return a
 
