@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+'''MOdule'''
+
+
+class Student:
+    '''Class'''
+
+    def __init__(self, first_name, last_name, age):
+        '''constructor'''
+
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self, attrs=None):
+        '''to json'''
+        if attrs is None:
+            return self.__dict__
+        else:
+            a = {}
+            for i in attrs:
+                if hasattr(self, i):
+                    a.update({i: dict(self.__dict__).get(i)})
+            return a
+
+    def reload_from_json(self, json):
+        '''reload from a json text file'''
+
+        for i in json.keys():
+            self.__dict__[i] = json[i]
