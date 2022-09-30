@@ -17,4 +17,8 @@ class Student:
         if attrs == None:
             return self.__dict__
         else:
-            return self.__dict__[attrs]
+            a = {}
+            for i in attrs:
+                a.update(self.__dict__.key(i)))
+            return a
+
