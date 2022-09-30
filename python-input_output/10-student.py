@@ -19,6 +19,6 @@ class Student:
         else:
             a = {}
             for i in attrs:
-                a.update(self.__dict__.key(i)))
+                a.update(self.__dict__.key(i))
             return a
 
