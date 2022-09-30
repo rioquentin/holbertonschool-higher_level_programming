@@ -14,12 +14,11 @@ class Student:
 
     def to_json(self, attrs=None):
         '''to json'''
-        if attrs == None:
+        if attrs is None:
             return self.__dict__
         else:
             a = {}
             for i in attrs:
                 if hasattr(self, i):
-                    a.update({i:dict(self.__dict__).get(i)})
+                    a.update({i: dict(self.__dict__).get(i)})
             return a
-
