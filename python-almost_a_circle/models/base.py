@@ -11,7 +11,7 @@ class Base:
         '''Constructor for base attributes'''
 
         if id is None:
-            __nb_objects += 1
-            self.__id = __nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
         else:
-            self.__id = id
+            self.id = id
