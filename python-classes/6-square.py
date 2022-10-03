@@ -7,7 +7,7 @@ class Square(object):
 
     def __init__(self, size=0, position=(0, 0)):
         '''defining size'''
-        self.__size = size
+        self.size = size
         self.position = position
 
     @property
@@ -37,8 +37,8 @@ class Square(object):
         i = "position must be a tuple of 2 positive integers"
         if type(value) is not tuple or len(value) != 2:
             raise TypeError(i)
-        for i in value:
-            if type(i) is not int or i < 0:
+        for i in range(0, 1):
+            if type(value[i]) is not int or value[i] < 0:
                 raise TypeError(i)
         self.__position = value
 

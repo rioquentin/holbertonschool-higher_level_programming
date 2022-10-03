@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
                 actual = number.get(x)
                 if result != 0:
                     if actual > prev:
-                        result = actual - prev
+                        result -= number.get(x)
                     else:
                         result += number.get(x)
                     prev = number.get(x)

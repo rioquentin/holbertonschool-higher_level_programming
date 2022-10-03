@@ -7,6 +7,8 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError("text must be a string")
+    
+    #spliting
     l = text.split()
     h = ""
     for i in l:
@@ -14,6 +16,8 @@ def text_indentation(text):
             h += i
         else:
             h += " " + i
+
+
     for x in range(0, len(h)):
         if h[x] in ["?", ".", ":"]:
             print(h[x] + "\n")
