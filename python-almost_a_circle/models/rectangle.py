@@ -90,4 +90,4 @@ class Rectangle(Base):
         '''Overwrite the str() method'''
 
         return("[Rectangle] ({}) {}/{} - {}/{}".format
-                (self.id, self.x, self.y, self.width, self.height))
+               (self.id, self.x, self.y, self.width, self.height))
