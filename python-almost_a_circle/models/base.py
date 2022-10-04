@@ -2,6 +2,9 @@
 '''File that contain Parent class'''
 
 
+import json
+
+
 class Base:
     '''Main class with basics methods'''
 
@@ -15,3 +18,11 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    def to_json_string(list_dictionaries):
+        '''JSON str repr of argument'''
+
+        if list_dictionaries is None:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
