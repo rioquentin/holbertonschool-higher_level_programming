@@ -110,3 +110,9 @@ class Rectangle(Base):
         else:
             for i, x in kwargs.items():
                 setattr(self, i, x)
+
+    def to_dictionary(self):
+        ''' return a dict of instance attr'''
+
+        return {'x': self.x, 'y': self.y, 'id': self.id,\
+                'height': self.height, 'width': self.width}
