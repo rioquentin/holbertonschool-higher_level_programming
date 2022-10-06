@@ -43,7 +43,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         ''' load a json string'''
-        if json_string is Not None:
+        if json_string is Not None or json_string:
             return json.loads(json_string)
         else:
             return []
