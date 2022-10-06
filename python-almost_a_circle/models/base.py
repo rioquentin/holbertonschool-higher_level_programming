@@ -36,5 +36,5 @@ class Base:
         for i in list_objs:
             jsonstr.append(to_json_string(list_objs[i]))
 
-        with open(type(cls) + ".json", 'w+') as f:
+        with open("Rectangle.json", 'w+') as f:
             json.dump(jsonstr, f)
