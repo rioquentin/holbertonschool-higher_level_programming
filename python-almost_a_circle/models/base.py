@@ -32,4 +32,4 @@ class Base:
         '''save json string to a file'''
 
         with open(type(cls) + ".json", 'w+') as f:
-            f.write(to_json_string(list_objs))
+            json.dump(to_json_string(list_objs), f)
