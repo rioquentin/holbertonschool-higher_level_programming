@@ -30,11 +30,12 @@ class Base:
 
     def save_to_file(cls, list_objs):
         '''save json string to a file'''
-        jsonstr = []
-        if list_objs is None:
-            list_objs = []
-        for i in list_objs:
-            jsonstr.append(to_json_string(list_objs[i]))
-
-        with open("Rectangle.json", 'w+') as f:
-            json.dump(jsonstr, f)
+        
+        name = cls.__name__ +".json"
+        if list_objs is not None:
+            new = []
+            for i in list_objs:
+                new.append(i.to_dictionary())
+        json_string = cls.to_json_string(new)
+        with open(name, 'w+') as f:
+            f.write(json_string)
