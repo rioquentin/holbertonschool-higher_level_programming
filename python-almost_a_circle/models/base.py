@@ -30,6 +30,11 @@ class Base:
 
     def save_to_file(cls, list_objs):
         '''save json string to a file'''
+        jsonstr = []
+        if list_objs is None:
+            list_objs = []
+        for i in list_objs:
+            jsonstr.append(to_json_string(list_objs[i]))
 
         with open(type(cls) + ".json", 'w+') as f:
-            json.dump(to_json_string(list_objs), f)
+            json.dump(jsonstr, f)
