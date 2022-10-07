@@ -51,6 +51,6 @@ class Base:
     def create(cls, **dictionary):
        ''' create a new instance with a dict'''
 
-        dummy = Rectangle(0, 0, 0, 0, 0)
-        dummy.update(None, dictionary)
+        dummy = Rectangle(1, 1)
+        dummy.update(**dictionary)
         return dummy
