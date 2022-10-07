@@ -46,3 +46,11 @@ class Base:
         if json_string is not None or json_string:
             return json.loads(json_string)
         return []
+
+    @staticmethod
+    def create(cls, **dictionary):
+       ''' create a new instance with a dict'''
+
+        dummy = Rectangle(0, 0, 0, 0, 0)
+        dummy.update(None, dictionary)
+        return dummy
