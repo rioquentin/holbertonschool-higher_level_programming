@@ -1,2 +1,2 @@
 -- Full description
-SHOW FULL TABLES `first_table`
+SHOW FULL TABLES first_table
