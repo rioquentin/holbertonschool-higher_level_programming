@@ -1,2 +1,2 @@
 -- Full description
-DESC first_table
+SHOW COLUMN first_table
