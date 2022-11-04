@@ -1,2 +1,2 @@
 -- Say my name
-SELECT score, name IF name <> NULL FROM second_table ORDER BY score DESC
+SELECT score, name FROM second_table ORDER BY score DESC WHERE name IS NOT NULL
