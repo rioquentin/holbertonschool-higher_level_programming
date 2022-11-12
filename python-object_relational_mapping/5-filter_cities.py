@@ -14,7 +14,8 @@ if __name__ == "__main__":
 
     last = len(result)
     for i in range(0, len(result) - 1):
+        v = (", ", )
         city = result[i]
-        print(city + ", " ,end="")
+        print(city + v ,end="")
     print(result[last])
        
