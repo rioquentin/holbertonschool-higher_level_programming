@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""list all State objects"""
+"""Test"""
 
 import sys
 from model_state import Base, State
