@@ -15,6 +15,6 @@ if __name__ == "__main__":
     cities = ""
     sep = ""
     for i in result:
-        cities = cities + sep + i
+        cities += sep + i[0]
         sep = ", "
     print(cities)
