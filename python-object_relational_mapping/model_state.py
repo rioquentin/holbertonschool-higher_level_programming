@@ -5,10 +5,10 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
-b = declarative_base()
+Base = declarative_base()
 
 
-class State(b):
+class State(Base):
     """State Class"""
 
     __tablename__ = 'states'
