@@ -12,10 +12,9 @@ if __name__ == "__main__":
             WHERE states.name = %s ORDER BY cities.id ASC""", (sys.argv[4], ))
     result = c.fetchall()
 
-    last = len(result) - 1
-    for i in range(0, len(result) - 2):
-        v = (", ", )
-        city = result[i]
-        print(city + v ,end="")
-    print(result[last])
-       
+    cities = ""
+    sep = ""
+    for i in result:
+        cities += sep + i
+        sep = ", "
+    print(cities)
