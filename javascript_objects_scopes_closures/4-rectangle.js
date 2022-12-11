@@ -10,13 +10,17 @@ class Rectangle {
     }
   }
 
-  print () {
+  print (c = undefined) {
     let i = 0;
     let x = 0;
 
+    if (c === undefined) {
+      c = 'X'
+    }
+
     while (i < this.height) {
       while (x < this.width) {
-        process.stdout.write('X');
+        process.stdout.write(c);
         x += 1;
       }
       console.log('');
