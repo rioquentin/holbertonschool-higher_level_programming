@@ -1,6 +1,7 @@
 #!/usr/bin/node
-import { list } from './100-data';
+const importArray = require('./100-data');
 
-const map = list.map((value, index) => value * index);
-console.log(list);
-console.log(map);
+const listed = importArray.list;
+const mapped = listed.map((value, index) => value * index);
+console.log(listed);
+console.log(mapped);
