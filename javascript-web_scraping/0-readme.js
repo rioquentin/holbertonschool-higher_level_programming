@@ -1,10 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
-const argv = process.argv;
 const fs = require('fs');
-const path = require('path');
-const pathFile = path.resolve(path.dirname(__filename), './' + argv[2]);
-fs.readFile(pathFile, function (err, contents) {
+fs.readFile(process.argv[2], function (err, contents) {
   if (!err) {
     console.log(contents.toString().trim());
   } else {
