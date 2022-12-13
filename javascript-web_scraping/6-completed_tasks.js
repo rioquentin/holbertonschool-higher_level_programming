@@ -19,9 +19,9 @@ request(API_URL, { json: true }, (err, res, body) => {
       }
     }
   });
-  let dict = {}
+  const dict = {};
   completedTasks.forEach((count, userId) => {
-    dict[userId] = count
+    dict[userId] = count;
   });
-  console.log(dict)
+  console.log(dict);
 });
