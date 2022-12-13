@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-const API_URL = 'https://swapi-api.hbtn.io/api/films/';
+const API_URL = process.argv[2];
 const CHARACTER_ID = 18;
 function getData (url) {
   return new Promise((resolve, reject) => {
