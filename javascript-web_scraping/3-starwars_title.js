@@ -2,9 +2,9 @@
 const process = require('process');
 const request = require('request');
 const id = process.argv[2];
+const url = 'https://swapi.dev/api/films/' + id
 
-const idFilm = id + '/'; // the id of the film you want to retrieve
-request(`https://swapi.dev/api/films/${idFilm}`, (error, response, body) => {
+request(url, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
